@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'mhartl_palindrome'
 
 get '/' do
   @title = 'Home'
