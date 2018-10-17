@@ -15,3 +15,8 @@ get '/palindrome' do
   @title = 'Palindrome Detector'
   erb :palindrome
 end
+
+post '/check' do
+  @phrase = params[:phrase]
+  erb :result
+end
