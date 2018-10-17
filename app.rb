@@ -18,5 +18,5 @@ end
 
 post '/check' do
   @phrase = params[:phrase]
-  erb :result
+  erb :results
 end
