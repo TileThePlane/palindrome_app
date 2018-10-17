@@ -13,6 +13,7 @@ class PalindromeAppTest < Minitest::Test
 		assert doc(last_response).at_css('h1')
 		title_content = doc(last_response).at_css('title').content
 		assert_equal "First Ruby App | Home", title_content
+		assert doc(last_response).at_css('nav')
 	def test_about
 		get '/about'
 		assert last_response.ok?
